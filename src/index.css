@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* COLORS */
+  --light-brown: #d87d4a;
+  --tan: #fbaf85;
+
+  --off-black: #101010;
+  --black: #000000;
+
+  --off-white: #fafafa;
+  --white: #ffffff;
+
+  --gray: #f1f1f1;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 58;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 44;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 36;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 1.75rem;
+  line-height: 38;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 33;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 24;
+  letter-spacing: 1.3px;
+}
+
+.overline {
+  font-size: 0.875rem;
+  line-height: 19;
+  letter-spacing: 10px;
+}
+
+.sub-title {
+  font-size: 0.8125rem;
+  line-height: 25;
+  letter-spacing: 1px;
+}
+
+.overline,
+.sub-title {
+  color: var(--light-brown);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.overline,
+.sub-title {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 25;
+}
+/* MOBILE FIRST SITE*/
+
+body {
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: blue;
+
+  display: grid;
+  grid-template-columns:
+    [margin-start] 25px [start] repeat(8, [col-start] 1fr [col-end])
+    [end] 25px [margin-end];
+}

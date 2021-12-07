@@ -1,8 +1,6 @@
 .shop-menu {
   grid-column: start / end;
 
-  padding-bottom: 2rem;
-
   display: grid;
   row-gap: 6rem;
 }

@@ -1,0 +1,36 @@
+.hero-section {
+  background-image: url("./../../assets/home/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: unset;
+
+  height: 600px;
+}
+
+.header {
+  grid-column: start / end;
+  place-self: center;
+  text-align: center;
+  height: 50%;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overline,
+.paragraph {
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.header > h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  opacity: 0.75;
+}

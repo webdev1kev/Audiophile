@@ -1,0 +1,48 @@
+.primary {
+  background-color: var(--light-brown);
+  color: var(--white);
+}
+
+.primary:hover {
+  background-color: var(--tan);
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.tertiary,
+.secondary:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.tertiary:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+.arrow {
+  background-color: transparent;
+  line-height: unset;
+  opacity: 0.5;
+}
+
+.arrow:hover {
+  color: var(--light-brown);
+}
+
+.icon-frame {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.primary,
+.secondary,
+.tertiary,
+.arrow,
+.go-back {
+  padding: 0.75rem 1.25rem;
+}

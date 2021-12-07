@@ -1,0 +1,24 @@
+.container {
+  background-color: var(--gray);
+  height: max-content;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  border-radius: 7px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-title {
+  color: var(--black);
+}
+
+.image-frame {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0;
+  width: 10rem;
+}

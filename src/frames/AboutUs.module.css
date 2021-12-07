@@ -1,0 +1,25 @@
+.about-us-section {
+  text-align: center;
+}
+
+.image-frame,
+.heading,
+.paragraph {
+  grid-column: start / end;
+}
+
+.heading,
+.paragraph {
+  margin-top: 2rem;
+}
+.image-frame img {
+  border-radius: var(--border-radius);
+}
+
+.paragraph {
+  opacity: 0.5;
+}
+
+.highlight {
+  color: var(--light-brown);
+}

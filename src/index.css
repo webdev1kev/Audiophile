@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Manrope", sans-serif;
 }
 
 :root {
@@ -16,58 +17,91 @@
   --white: #ffffff;
 
   --gray: #f1f1f1;
+
+  /* BORDER RADIUS */
+  --border-radius: 7px;
+
+  /* MARGIN-TOP */
+  --section-padding: 2rem;
 }
 
-body {
-  font-family: "Manrope", sans-serif;
+html {
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns:
+    [margin-start] 1rem [start] repeat(8, [col-start] 1fr [col-end])
+    [end]
+    1rem [margin-end];
+  padding: 7rem 0;
 }
 
 h1 {
   font-size: 3.5rem;
-  line-height: 58;
+  line-height: 58px;
   letter-spacing: 2px;
 }
 
 h2 {
   font-size: 2.5rem;
-  line-height: 44;
+  line-height: 44px;
   letter-spacing: 1.5px;
 }
 
 h3 {
   font-size: 2rem;
-  line-height: 36;
+  line-height: 36px;
   letter-spacing: 1.15px;
 }
 
 h4 {
   font-size: 1.75rem;
-  line-height: 38;
+  line-height: 38px;
   letter-spacing: 2px;
 }
 
 h5 {
   font-size: 1.5rem;
-  line-height: 33;
+  line-height: 33px;
   letter-spacing: 1.7px;
 }
 
 h6 {
   font-size: 1.125rem;
-  line-height: 24;
+  line-height: 24px;
   letter-spacing: 1.3px;
 }
 
 .overline {
   font-size: 0.875rem;
-  line-height: 19;
+  line-height: 19px;
   letter-spacing: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-.sub-title {
-  font-size: 0.8125rem;
-  line-height: 25;
+.sub-title,
+a,
+button {
+  font-size: 13px;
+  line-height: 25px;
   letter-spacing: 1px;
+}
+
+button,
+a {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .overline,
@@ -81,27 +115,27 @@ h3,
 h4,
 h5,
 h6,
-.overline,
 .sub-title {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 p {
   font-size: 0.9375rem;
-  line-height: 25;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
 }
 /* MOBILE FIRST SITE*/
 
-body {
-}
-
-section {
-  min-height: 100vh;
-  width: 100%;
-  background-color: blue;
-
-  display: grid;
-  grid-template-columns:
-    [margin-start] 25px [start] repeat(8, [col-start] 1fr [col-end])
-    [end] 25px [margin-end];
+@media only screen and (min-width: 375px) {
+  html {
+  }
 }

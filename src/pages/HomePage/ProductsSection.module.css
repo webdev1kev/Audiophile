@@ -1,0 +1,78 @@
+.products-section {
+  padding: var(--section-padding) 0;
+
+  row-gap: 1rem;
+}
+
+.products-section a {
+  margin-top: 2rem;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  grid-column: start / end;
+  border-radius: var(--border-radius);
+  padding: 0 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+.card-1 {
+  height: 600px;
+  background-color: var(--light-brown);
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card-1 .content {
+  height: 70%;
+  text-align: center;
+  color: var(--white);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-1 .image-frame {
+  width: 40%;
+}
+
+.card-1 .icon-frame {
+  position: absolute;
+  transform: scale(1.7);
+  top: 0;
+  right: 0;
+}
+
+.card-2 {
+  height: 325px;
+  background-image: url("./../../assets/home/mobile/image-speaker-zx7.jpg");
+}
+
+.card-2,
+.card-4 {
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card-3,
+.card-4 {
+  height: 200px;
+}
+
+.card-3 {
+  background-image: url("./../../assets/home/mobile/image-earphones-yx1.jpg");
+}
+
+.card-4 {
+  background-color: var(--gray);
+}

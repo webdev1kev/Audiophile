@@ -2,6 +2,7 @@ import HeroSection from "./HeroSection";
 import ShopSection from "./ShopSection";
 import ProductsSection from "./ProductsSection";
 import AboutUs from "./../../frames/AboutUs";
+import Footer from "./../../frames/Footer";
 
 import classes from "./HomePage.module.css";
 
@@ -12,6 +13,7 @@ const HomePage = () => {
       <ShopSection />
       <ProductsSection />
       <AboutUs />
+      <Footer />
     </main>
   );
 };

@@ -9,32 +9,33 @@ import instagram from "./../assets/shared/desktop/icon-instagram.svg";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={classes.footer}>
+      <hr />
       <div className={classes["logo-frame"]}>
         <img src={logo} alt="" />
-        <div className={classes["footer-links"]}>
-          <Link to="/">Home</Link>
-          <Link to="/">Headphones</Link>
-          <Link to="/">Speakers</Link>
-          <Link to="/">Earphones</Link>
+      </div>
+      <div className={classes["footer-links"]}>
+        <Link to="/">Home</Link>
+        <Link to="/">Headphones</Link>
+        <Link to="/">Speakers</Link>
+        <Link to="/">Earphones</Link>
+      </div>
+      <p className={`${classes.paragraph} paragraph`}>
+        Audiophile is an all in one stop to fulfill your audio needs. We're a
+        small team of music lovers and sound specialists who are devoted to
+        helping you get the most out of personal audio. Come and visit our demo
+        facility - we’re open 7 days a week.
+      </p>
+      <p className={classes.copyright}>Copyright 2021. All Rights Reserved</p>
+      <div className={classes["social-media-links"]}>
+        <div className={classes["icon-frame"]}>
+          <img src={facebook} alt="Facebook Icon" />
         </div>
-        <p>
-          Audiophile is an all in one stop to fulfill your audio needs. We're a
-          small team of music lovers and sound specialists who are devoted to
-          helping you get the most out of personal audio. Come and visit our
-          demo facility - we’re open 7 days a week.
-        </p>
-        <p>Copyright 2021. All Rights Reserved</p>
-        <div className={classes["social-media-links"]}>
-          <div className={classes["icon-frame"]}>
-            <img src={facebook} alt="Facebook Icon" />
-          </div>
-          <div className={classes["icon-frame"]}>
-            <img src={twitter} alt="Twitter Icon" />
-          </div>
-          <div className={classes["icon-frame"]}>
-            <img src={instagram} alt="Instagram Icon" />
-          </div>
+        <div className={classes["icon-frame"]}>
+          <img src={twitter} alt="Twitter Icon" />
+        </div>
+        <div className={classes["icon-frame"]}>
+          <img src={instagram} alt="Instagram Icon" />
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@ const LinkButton = (props) => {
       className={classes[props.type]}
       reloadDocument={true}
       onClick={() => {
-        props.onClick();
+        props.onClick && props.onClick();
       }}
     >
       {props.children}

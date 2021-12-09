@@ -2,5 +2,6 @@
   grid-column: start / end;
 
   display: grid;
+  margin-top: 3rem;
   row-gap: 6rem;
 }

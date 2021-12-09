@@ -1,23 +1,17 @@
 import classes from "./Gallery.module.css";
 
-import image1 from "./../assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg";
-import image2 from "./../assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg";
-import image3 from "./../assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg";
-
 const Gallery = (props) => {
   return (
     <section className={classes["gallery-section"]}>
-      <div className={classes.gallery}>
-        <div className={classes["image-frame"]}>
-          <img src={image1} alt="" />
-        </div>
-        <div className={classes["image-frame"]}>
-          <img src={image2} alt="" />
-        </div>
-        <div className={classes["image-frame"]}>
-          <img src={image3} alt="" />
-        </div>
-      </div>
+      <ul className={classes.gallery}>
+        {props.images.map((image, i) => {
+          return (
+            <li key={i} className={classes["image-frame"]}>
+              <img src={image} alt="Gallery Photo" />
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };

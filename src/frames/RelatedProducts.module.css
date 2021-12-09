@@ -1,0 +1,17 @@
+.related-products-section > h5,
+.related-products {
+  grid-column: start / end;
+  text-align: center;
+}
+
+.related-products {
+  margin-top: 3rem;
+
+  display: grid;
+  row-gap: 3rem;
+  place-items: center;
+}
+
+.image-frame > img {
+  border-radius: var(--border-radius);
+}

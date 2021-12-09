@@ -8,7 +8,7 @@ import earphonesThumbnail from "./../assets/shared/desktop/image-category-thumbn
 
 import LinkButton from "../components/LinkButton";
 
-const NavMenuItems = () => {
+const NavMenuItems = (props) => {
   return (
     <Fragment>
       <li className={classes.container}>
@@ -16,7 +16,13 @@ const NavMenuItems = () => {
           <img src={headphonesThumbnail} alt="" />
         </div>
         <p className={`${classes["link-title"]} sub-title`}>Headphones</p>
-        <LinkButton to="/" type="arrow">
+        <LinkButton
+          to="/headphones"
+          type="arrow"
+          onClick={() => {
+            props.setMenuInactive();
+          }}
+        >
           Shop
         </LinkButton>
       </li>
@@ -24,8 +30,14 @@ const NavMenuItems = () => {
         <div className={classes["image-frame"]}>
           <img src={speakersThumbnail} alt="" />
         </div>
-        <p className={`${classes["link-title"]} sub-title`}>Headphones</p>
-        <LinkButton to="/" type="arrow">
+        <p className={`${classes["link-title"]} sub-title`}>Speakers</p>
+        <LinkButton
+          to="/speakers"
+          type="arrow"
+          onClick={() => {
+            props.setMenuInactive();
+          }}
+        >
           Shop
         </LinkButton>
       </li>
@@ -33,8 +45,14 @@ const NavMenuItems = () => {
         <div className={classes["image-frame"]}>
           <img src={earphonesThumbnail} alt="" />
         </div>
-        <p className={`${classes["link-title"]} sub-title`}>Headphones</p>
-        <LinkButton to="/" type="arrow">
+        <p className={`${classes["link-title"]} sub-title`}>Earphones</p>
+        <LinkButton
+          to="/earphones"
+          type="arrow"
+          onClick={() => {
+            props.setMenuInactive();
+          }}
+        >
           Shop
         </LinkButton>
       </li>

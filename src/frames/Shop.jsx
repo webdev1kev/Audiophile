@@ -1,8 +1,8 @@
-import classes from "./ShopSection.module.css";
+import classes from "./Shop.module.css";
 
-import NavMenuItems from "../../frames/NavMenuItems";
+import NavMenuItems from "./NavMenuItems";
 
-const ShopSection = () => {
+const Shop = () => {
   return (
     <section className={classes["shop-section"]}>
       <ul className={classes["shop-menu"]}>
@@ -12,4 +12,4 @@ const ShopSection = () => {
   );
 };
 
-export default ShopSection;
+export default Shop;

@@ -1,5 +1,5 @@
 import HeroSection from "./HeroSection";
-import ShopSection from "./ShopSection";
+import Shop from "../../frames/Shop";
 import ProductsSection from "./ProductsSection";
 import AboutUs from "./../../frames/AboutUs";
 import Footer from "./../../frames/Footer";
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <main className={classes.homepage}>
       <HeroSection />
-      <ShopSection />
+      <Shop />
       <ProductsSection />
       <AboutUs />
       <Footer />

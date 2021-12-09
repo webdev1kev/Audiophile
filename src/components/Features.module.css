@@ -1,0 +1,9 @@
+.features-section {
+}
+
+.content {
+  grid-column: start / end;
+
+  display: grid;
+  row-gap: 2rem;
+}

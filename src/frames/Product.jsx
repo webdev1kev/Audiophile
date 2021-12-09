@@ -1,25 +1,61 @@
-import classes from "./Products.module.css";
+import { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 
-import headphonesMobile from "./../assets/product-xx59-headphones/mobile/image-product.jpg";
+import classes from "./Product.module.css";
 
 import LinkButton from "../components/LinkButton";
-import { Link } from "react-router-dom";
+import Button from "./../components/Button";
+import NumberStep from "../components/NumberStep";
 
 const Product = (props) => {
+  const productDetailClass = props.productDetail
+    ? classes["product-detail"]
+    : undefined;
+
+  const navigate = useNavigate();
+
   return (
-    <section>
-      <div className={classes["image-frame"]}>
-        {props.newProduct && <p className="overline">New Product</p>}
-        <img src={headphonesMobile} alt={props.alt} />
-        <h4>XX99 Mark II Headphones</h4>
-        <p>
-          The new XX99 Mark II headphones is the pinnacle of pristine audio. It
-          redefines your premium headphone experience by reproducing the
-          balanced depth and precision of studio-quality sound.
-        </p>
-        <LinkButton type="primary">See Product</LinkButton>
-      </div>
-    </section>
+    <Fragment>
+      <section className={`${classes["product-section"]} `}>
+        {props.productDetail && (
+          <Button
+            className={classes["go-back"]}
+            type="go-back"
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            Go Back
+          </Button>
+        )}
+        <div className={classes["image-frame"]}>
+          <img src={props.image} alt={props.alt} />
+        </div>
+        {props.newProduct && (
+          <p className={`${classes.overline} ${productDetailClass} overline`}>
+            New Product
+          </p>
+        )}
+        <ul className={`${classes.products} ${productDetailClass}`}>
+          <li className={classes.item}>
+            {props.children}
+            {props.productDetail && <h6>$2,999</h6>}
+            {props.productDetail && (
+              <div className={classes["button-container"]}>
+                <NumberStep />
+                <Button type="primary">Add to Cart</Button>
+              </div>
+            )}
+
+            {!props.productDetail && (
+              <LinkButton to={props.link} type="primary">
+                See Product
+              </LinkButton>
+            )}
+          </li>
+        </ul>
+      </section>
+    </Fragment>
   );
 };
 

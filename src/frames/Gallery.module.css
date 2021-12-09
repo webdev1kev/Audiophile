@@ -1,0 +1,9 @@
+.gallery {
+  grid-column: start / end;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.image-frame > img {
+  border-radius: var(--border-radius);
+}

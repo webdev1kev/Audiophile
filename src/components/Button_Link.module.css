@@ -27,10 +27,15 @@
   background-color: transparent;
   line-height: unset;
   opacity: 0.5;
+  font-size: 13px;
 }
 
 .arrow:hover {
   color: var(--light-brown);
+}
+
+.go-back {
+  background-color: transparent;
 }
 
 .icon-frame {

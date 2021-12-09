@@ -2,11 +2,9 @@ import { Fragment, useState } from "react";
 
 import classes from "./Navbar.module.css";
 
-
 import hamburgerMenu from "./../assets/shared/tablet/icon-hamburger.svg";
 import cartIcon from "./../assets/shared/desktop/icon-cart.svg";
 import logo from "./../assets/shared/desktop/logo.svg";
-
 
 import Backdrop from "../components/Backdrop";
 import NavMenuItems from "./NavMenuItems";
@@ -17,7 +15,7 @@ const MobileNavMenu = (props) => {
   return (
     <ul className={`${classes["mobile-menu"]} ${active}`}>
       {active && <Backdrop />}
-      <NavMenuItems />
+      <NavMenuItems setMenuInactive={props.setMenuInactive} />
     </ul>
   );
 };
@@ -43,7 +41,12 @@ const Navbar = () => {
           <img src={cartIcon} alt="Cart Icon" />
         </div>
       </nav>
-      <MobileNavMenu active={menuActive} />
+      <MobileNavMenu
+        active={menuActive}
+        setMenuInactive={() => {
+          setMenuActive(false);
+        }}
+      />
     </Fragment>
   );
 };

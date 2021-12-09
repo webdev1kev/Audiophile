@@ -1,0 +1,44 @@
+.go-back {
+  grid-column: start / end;
+  width: max-content;
+  padding: unset;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.overline,
+.products {
+  margin-top: 2rem;
+}
+
+.image-frame,
+.overline,
+.products {
+  grid-column: start / end;
+  text-align: center;
+}
+
+.image-frame > img {
+  border-radius: var(--border-radius);
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container > div {
+  margin-right: 1rem;
+}
+
+.button-container,
+.product-detail,
+.product-detail h6 {
+  width: 100%;
+  text-align: left;
+}

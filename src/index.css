@@ -23,9 +23,8 @@
 
   /* MARGIN-TOP */
   --section-padding: 2rem;
-}
 
-html {
+  --opacity: 0.5;
 }
 
 section {
@@ -36,7 +35,7 @@ section {
     [margin-start] 1.25rem [start] repeat(8, [col-start] 1fr [col-end])
     [end]
     1.25rem [margin-end];
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 h1 {
@@ -98,6 +97,7 @@ a {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
 }
 
 a {
@@ -133,9 +133,15 @@ img {
 ul {
   list-style: none;
 }
-/* MOBILE FIRST SITE*/
 
-@media only screen and (min-width: 375px) {
-  html {
-  }
+/* GENERAL STYLING */
+
+.category-heading {
+  background-color: var(--black);
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: var(--white);
 }
+
+/* MOBILE FIRST SITE*/

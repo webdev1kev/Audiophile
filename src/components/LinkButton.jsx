@@ -6,7 +6,14 @@ import iconArrowRight from "./../assets/shared/desktop/icon-arrow-right.svg";
 
 const LinkButton = (props) => {
   return (
-    <Link to={props.to} className={classes[props.type]}>
+    <Link
+      to={props.to}
+      className={classes[props.type]}
+      reloadDocument={true}
+      onClick={() => {
+        props.onClick();
+      }}
+    >
       {props.children}
       {props.type === "arrow" && (
         <div className={classes["icon-frame"]}>

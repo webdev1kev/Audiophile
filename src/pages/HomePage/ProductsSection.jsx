@@ -19,7 +19,7 @@ const ProductsSection = () => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <LinkButton to="/" type="tertiary">
+          <LinkButton to="/speakers/zx9" type="tertiary">
             See Product
           </LinkButton>
         </div>
@@ -29,14 +29,14 @@ const ProductsSection = () => {
       </div>
       <div className={classes["card-2"]}>
         <h4>ZX7 SPEAKER</h4>
-        <LinkButton to="/" type="secondary">
+        <LinkButton to="/speakers/zx7" type="secondary">
           See Product
         </LinkButton>
       </div>
       <div className={classes["card-3"]}></div>
       <div className={classes["card-4"]}>
         <h4>YX1 EARPHONES</h4>
-        <LinkButton to="/" type="secondary">
+        <LinkButton to="/earphones/yx1" type="secondary">
           See Product
         </LinkButton>
       </div>

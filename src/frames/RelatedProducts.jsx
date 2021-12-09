@@ -20,7 +20,7 @@ export const RelatedProducts = (props) => {
   return (
     <section className={classes["related-products-section"]}>
       <h5>You May Also Like</h5>
-      {props.children}
+      <h5>{props.children}</h5>
     </section>
   );
 };

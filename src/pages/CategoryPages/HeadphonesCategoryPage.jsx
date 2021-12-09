@@ -29,7 +29,7 @@ const HeadphonesCategoryPage = () => {
         alt="XX99 Mark 1 Headphones"
         link="/headphones/xx99m1"
       >
-        <h4>XX59 Headphones</h4>
+        <h4>XX99 Mark I Headphones</h4>
         <p className="paragraph">
           As the gold standard for headphones, the classic XX99 Mark I offers
           detailed and accurate audio reproduction for audiophiles, mixing

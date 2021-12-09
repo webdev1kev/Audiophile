@@ -13,7 +13,7 @@ const EarphonesCategoryPage = () => {
         newProduct={true}
         image={yX1EarphonesMobile}
         alt="YX1 Wireless Earphones"
-        link="/earphones/yx1-earphones"
+        link="/earphones/yx1"
       >
         <h4>YX1 Wireless Earphones</h4>
         <p className="paragraph">

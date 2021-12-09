@@ -1,5 +1,5 @@
 import Product from "../../frames/Product";
-import Features from "./../../components/Features";
+import Features from "../../frames/Features";
 import Gallery from "../../frames/Gallery";
 import { RelatedProducts, RelatedProduct } from "../../frames/RelatedProducts";
 import Footer from "../../frames/Footer";
@@ -23,6 +23,7 @@ const XX99M2DetailPage = () => {
         newProduct={true}
         productDetail={true}
         image={productImage}
+        price="2,999"
       >
         <h4>XX99 Mark II Headphones</h4>
         <p className="paragraph">

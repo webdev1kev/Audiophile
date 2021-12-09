@@ -20,7 +20,7 @@ const NavMenuItems = (props) => {
           to="/headphones"
           type="arrow"
           onClick={() => {
-            props.setMenuInactive();
+            props.setMenuInactive && props.setMenuInactive();
           }}
         >
           Shop
@@ -35,7 +35,7 @@ const NavMenuItems = (props) => {
           to="/speakers"
           type="arrow"
           onClick={() => {
-            props.setMenuInactive();
+            props.setMenuInactive && props.setMenuInactive();
           }}
         >
           Shop
@@ -50,7 +50,7 @@ const NavMenuItems = (props) => {
           to="/earphones"
           type="arrow"
           onClick={() => {
-            props.setMenuInactive();
+            props.setMenuInactive && props.setMenuInactive();
           }}
         >
           Shop

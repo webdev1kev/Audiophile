@@ -38,7 +38,8 @@
 
 .button-container,
 .product-detail,
-.product-detail h6 {
+.product-detail h6,
+.product-detail h4 {
   width: 100%;
   text-align: left;
 }

@@ -39,7 +39,7 @@ const Product = (props) => {
         <ul className={`${classes.products} ${productDetailClass}`}>
           <li className={classes.item}>
             {props.children}
-            {props.productDetail && <h6>$2,999</h6>}
+            {props.productDetail && <h6>$ {props.price}</h6>}
             {props.productDetail && (
               <div className={classes["button-container"]}>
                 <NumberStep />

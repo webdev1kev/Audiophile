@@ -15,10 +15,18 @@ const Footer = () => {
         <img src={logo} alt="" />
       </div>
       <div className={classes["footer-links"]}>
-        <Link to="/">Home</Link>
-        <Link to="/">Headphones</Link>
-        <Link to="/">Speakers</Link>
-        <Link to="/">Earphones</Link>
+        <Link to="/" reloadDocument>
+          Home
+        </Link>
+        <Link to="/headphones" reloadDocument>
+          Headphones
+        </Link>
+        <Link to="/speakers" reloadDocument>
+          Speakers
+        </Link>
+        <Link to="/earphones" reloadDocument>
+          Earphones
+        </Link>
       </div>
       <p className={`${classes.paragraph} paragraph`}>
         Audiophile is an all in one stop to fulfill your audio needs. We're a
